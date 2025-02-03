@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>¿Quieres ser mi San Valentín?</h1>
+        <button id="yesButton">Sí</button>
+        <button id="noButton">No</button>
+    </div>
+    <div id="heartAnimation">💖</div>
+    <div id="romanticMessage"></div>
+    <script>
+        document.getElementById("yesButton").onclick = function() {
+            document.body.style.backgroundImage = "url('https://image.shutterstock.com/image-photo/romantic-background-roses-golden-hearts-260nw-1202769387.jpg')";
+            document.getElementById("container").style.display = "none";
+
+            const heartAnimation = document.getElementById("heartAnimation");
+            heartAnimation.classList.add("show");
+
+            const romanticMessage = document.getElementById("romanticMessage");
+            romanticMessage.innerText = "Eres la mujer con la que tanto soñé tener te amo infinitamente mi cielo";
+            romanticMessage.classList.add("show");
+        }
+
+        document.getElementById("noButton").onclick = function() {
+            document.getElementById("container").style.display = "none";
+
+            alert("oh 😢");
+
+            const heartAnimation = document.getElementById("heartAnimation");
+            heartAnimation.innerHTML = "💔";
+            heartAnimation.classList.add("show");
+        }
+    </script>
+</body>
+</html>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+
